@@ -25,6 +25,18 @@ namespace Password_Manager_App.Controllers
             return View(await _context.Password.ToListAsync());
         }
 
+        // GET: Passwords/ShowSearchForm
+        public async Task<IActionResult> ShowSearchForm()
+        {
+            return View();
+        }
+
+        // POST: Passwords/ShowSearchResults
+        public string ShowSearchResults (string SearchPhrase)
+        {
+            return "Platform: " + SearchPhrase;
+        }
+
         // GET: Passwords/Details/5
         public async Task<IActionResult> Details(int? id)
         {
