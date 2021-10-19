@@ -6,4 +6,5 @@ Created in C#.
 
 ![Welcome Page](Content/Images/welcomePage.jpg)
 ![Passwords List Page](Content/Images/List.jpg)
+![Password Details](Content/Images/passwordDetails.jpg)
 ![Search Page](Content/Images/Search.jpg)
