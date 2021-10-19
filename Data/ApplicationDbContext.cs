@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Password_Manager_App.Models;
 
 namespace Password_Manager_App.Data
 {
@@ -12,5 +13,6 @@ namespace Password_Manager_App.Data
             : base(options)
         {
         }
+        public DbSet<Password_Manager_App.Models.Password> Password { get; set; }
     }
 }
