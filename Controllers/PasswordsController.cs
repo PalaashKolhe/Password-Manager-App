@@ -32,9 +32,9 @@ namespace Password_Manager_App.Controllers
         }
 
         // POST: Passwords/ShowSearchResults
-        public string ShowSearchResults (string SearchPhrase)
+        public async Task<IActionResult> ShowSearchResults (string SearchPhrase)
         {
-            return "Platform: " + SearchPhrase;
+            return View("Index", await _context.Password.Where(j => j.Platform.Contains(SearchPhrase)).ToListAsync());
         }
 
         // GET: Passwords/Details/5
